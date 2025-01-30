@@ -10,7 +10,7 @@ swap_size_mb = 512
 [mounts]
   source = "couchdata"
   destination = "/opt/couchdb/data"
-  initial_size = "1GB"
+  initial_size = "5GB"
   auto_extend_size_threshold = 90
   auto_extend_size_increment = "1GB"
   auto_extend_size_limit = "2GB"
@@ -30,7 +30,7 @@ swap_size_mb = 512
 [[vm]]
   cpu_kind = 'shared'
   cpus = 1
-  memory_mb = 256
+  memory_mb = 512
 
 [[files]]
   guest_path = "/docker-entrypoint2.sh"
